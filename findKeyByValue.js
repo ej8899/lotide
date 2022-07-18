@@ -1,0 +1,48 @@
+//
+//  findKeyByValue.js
+//  https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/207?journey_step=30&workbook=5
+//  2022-07-18
+
+
+/*
+findKeyByValue() which takes in an object and a value.
+It should scan the object and return the first key which contains the given value. 
+If no key with that given value is found, then it should return undefined.
+*/
+const findKeyByValue =  function(searchObject,searchKey) {
+  returnString='';
+  if(!searchObject || !searchKey || !isObject(searchObject)) { return; } // basic error check & get out if it fails
+
+  // loop thru object
+  
+
+  return (returnString);
+}
+function isObject(obj) {
+  console.log(obj.constructor.name);
+    return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
+}
+
+
+
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`); // NOTE use of template literal here -- use back ticks to 'engage'
+  } else {
+    console.log("❌ Assertion Failed: " + actual + " !== " + expected);
+  }
+};
+
+const bestTVShowsByGenre = { 
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire"
+};
+
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue("What on Earth"), undefined);
+assertEqual(findKeyByValue(), undefined);
+assertEqual(findKeyByValue("not an object","The A-Team"), undefined);
+assertEqual(findKeyByValue(["not an object","item2"],"The A-Team"), undefined);
+assertEqual(findKeyByValue(5,"The A-Team"), undefined);
