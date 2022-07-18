@@ -10,16 +10,18 @@ It should scan the object and return the first key which contains the given valu
 If no key with that given value is found, then it should return undefined.
 */
 const findKeyByValue =  function(searchObject,searchKey) {
-  returnString='';
   if(!searchObject || !searchKey || !isObject(searchObject)) { return; } // basic error check & get out if it fails
 
   // loop thru object
-  
+  for (const category in searchObject) {
+    if(searchObject[category] === searchKey) {
+      return (category);
+    }
 
-  return (returnString);
+  }
+  return;
 }
 function isObject(obj) {
-  console.log(obj.constructor.name);
     return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
 }
 
@@ -36,7 +38,8 @@ const assertEqual = function(actual, expected) {
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
+  drama:  "The Wire",
+  action: "The A-Team",
 };
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
@@ -46,3 +49,4 @@ assertEqual(findKeyByValue(), undefined);
 assertEqual(findKeyByValue("not an object","The A-Team"), undefined);
 assertEqual(findKeyByValue(["not an object","item2"],"The A-Team"), undefined);
 assertEqual(findKeyByValue(5,"The A-Team"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre,"The A-Team"), "action");
