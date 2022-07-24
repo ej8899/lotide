@@ -18,21 +18,29 @@ const tail   = require('./tail');
 const middle = require('./middle');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  without: without,
-  takeUntil: takeUntil,
-  map:  map,
-  letterPositions: letterPositions,
-  flatten: flatten,
-  findKeyByValue: findKeyByValue,
-  findKey: findKey,
-  eqObjects: eqObjects,
-  eqArrays: eqArrays,
-  countOnly: countOnly,
-  countLetters: countLetters,
-  assertObjectsEqual: assertObjectsEqual,
-  assertEqual: assertEqual,
-  assertArraysEqual: assertArraysEqual
+  head,
+  tail,
+  middle,
+  without,
+  takeUntil,
+  map,
+  letterPositions,
+  flatten,
+  findKeyByValue,
+  findKey,
+  eqObjects,
+  eqArrays,
+  countOnly,
+  countLetters,
+  assertObjectsEqual,
+  assertEqual,
+  assertArraysEqual
 };
+
+// NOTE - ES6 objects can be written short form like:
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w4/activities/372?journey_step=32&workbook=7 
+/*
+ module.exports { 
+  head // this is if the KEY name is same name as the variable to pass in.
+}
+*/

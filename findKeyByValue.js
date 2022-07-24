@@ -26,15 +26,7 @@ function isObject(obj) {
 }
 
 
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`); // NOTE use of template literal here -- use back ticks to 'engage'
-  } else {
-    console.log("❌ Assertion Failed: " + actual + " !== " + expected);
-  }
-};
-
+/*
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
@@ -50,3 +42,4 @@ assertEqual(findKeyByValue("not an object","The A-Team"), undefined);
 assertEqual(findKeyByValue(["not an object","item2"],"The A-Team"), undefined);
 assertEqual(findKeyByValue(5,"The A-Team"), undefined);
 assertEqual(findKeyByValue(bestTVShowsByGenre,"The A-Team"), "action");
+*/

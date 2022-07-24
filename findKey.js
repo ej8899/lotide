@@ -23,7 +23,7 @@ function isObject(obj) {
   return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
 }
 
-
+/*
 console.log(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
@@ -41,3 +41,4 @@ console.log(findKey({
   "wrecks":   { areas: [2,3], sightings: 2 },
   "parrot fish":       { areas: [3,7], sightings: 2 }
 }, x => x.sightings === 4)); // => "moray eel"
+*/

@@ -12,8 +12,3 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
-// MISC test calls
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-// assertEqual(true, true);

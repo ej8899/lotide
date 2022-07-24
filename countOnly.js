@@ -32,21 +32,7 @@ const countOnly = function(allItems, itemsToCount) {
 
 
 
-
-
-//
-// assertEqual(actual,expected) - compares via actual equal vs coercion & logs output to console only
-// part of lotide library.
-// 2022-07-13
-//
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`); // NOTE use of template literal here -- use back ticks to 'engage'
-  } else {
-    console.log("❌ Assertion Failed: " + actual + " !== " + expected);
-  }
-};
+/*
 
 
 const firstNames = [
@@ -67,3 +53,4 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
+*/

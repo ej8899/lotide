@@ -21,7 +21,7 @@ const takeUntil = function(array, callbackFn) {
 }
 
 
-
+/*
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
@@ -50,3 +50,4 @@ const data5 = [1, 'a', 5, 'safdklfd', 2, -1, 'six', 4, 5];
 const results5 = takeUntil(data5, x => x === 1); // this should give EMPTY array since first is a match for "UNTIL"
 console.log(results5);
 console.log('---');
+*/

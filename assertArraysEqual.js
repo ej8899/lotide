@@ -21,8 +21,3 @@ function eqArrays(arr1,arr2) {
   }
   return true;
 }
-
-
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-assertArraysEqual(['a',1,'2'],1);

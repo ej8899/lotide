@@ -3,11 +3,12 @@
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w1/activities/184?journey_step=29&workbook=4
 //
 
-
+/*
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 console.log(without([1, 2, 3], [1,2])); // => [3]
 console.log(without([1, -22, 3, 'fish','dolphin','robot'], [1,2,'robot',3])); // => [-22,'fish','dolphin']
+*/
 
 function without(sourceArr,removeArr) {
   // ERROR CHECKING
