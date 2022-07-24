@@ -1,19 +1,4 @@
-// MODIFIED assertEqual to better deal with arrays - not perfect, but passes most checks here EXCEPT for mixed array types
-const assertEqual = function(actual, expected) {
-  if (!actual) {
-    actual = '';
-  }
-  if (!expected) {
-    expected = '';
-  }
-  actual = actual.toString();
-  expected = expected.toString();
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`); // NOTE use of template literal here -- use back ticks to 'engage'
-  } else {
-    console.log("❌ Assertion Failed: " + actual + " !== " + expected);
-  }
-};
+
 
 /*
 // MISC CHECKS
