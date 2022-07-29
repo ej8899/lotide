@@ -1,6 +1,7 @@
 //
-// lotide library - countOnly.js
+// LHL - Lotide Library - countOnly.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/204?journey_step=30&workbook=5
+// v1.0 - 2022-07-29
 //
 
 // allItems: an array of strings that we need to look through
@@ -25,16 +26,12 @@ const countOnly = function(allItems, itemsToCount) {
       }
     }
   }
-
-  // console.log(results);
   return results;
 }
 
 
 
 /*
-
-
 const firstNames = [
   "Karl",
   "Salima",
