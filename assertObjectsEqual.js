@@ -1,40 +1,11 @@
 //
-// LHL - eqObjects
+// LHL - Lotide Library - index.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/209?journey_step=30&workbook=5
+// v1.0 - 2022-07-29
 //
 
 
-
-const eqObjects = function(object1, object2) {
-  let isKeyArray = false;
-
-  // quick check for same # of object keys in each
-  if(Object.keys(object1).length !== Object.keys(object2).length) {
-    return false;
-  }
-  
-  // loop thru object1 - compare key & value to object2 key & value
-  for (const eachKey in object1) {
-    isKeyArray = Array.isArray(object1[eachKey]);
-
-    // run basic key value checks
-    if(object1[eachKey] !== object2[eachKey] && !isKeyArray) {
-      return false;
-    }
-    // we have objects in our keys:
-    if(isKeyArray) {
-      // check eq arrays - return false if no match
-      if(eqArrays(object1[eachKey],object2[eachKey]) === false ) {
-        return false;
-      }
-    }
-  }
-  return true; // passed all the tests
-};
-
-
-
-
+const eqObjects = require('./eqObjects');
 
 // FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
@@ -48,6 +19,10 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertObjectsEqual;
+
+/*
 const ab = { a: "1", b: "2", c:3 };
 const ba = { b: "2", a: "1" };
 assertObjectsEqual(ab, ba); // => true
+*/
