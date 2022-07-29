@@ -1,4 +1,8 @@
-
+//
+// LHL - Lotide Library - eqArrays.js
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w1/activities/182?journey_step=29&workbook=4
+// v1.0 - 2022-07-29
+//
 
 function eqArrays(arr1,arr2) {
   if(arr1.length !== arr2.length) {  // not even same length, lets avoid extra work
@@ -11,7 +15,5 @@ function eqArrays(arr1,arr2) {
   }
   return true;
 }
-
-
 
 module.exports = eqArrays;
