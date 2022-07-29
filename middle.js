@@ -1,3 +1,8 @@
+//
+// LHL - Lotide Library - middle.js
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w1/activities/199?journey_step=29&workbook=4
+// v1.0 - 2022-07-29
+//
 
 function middle(array) {
   if(Array.isArray(array) === false) {
@@ -16,7 +21,5 @@ function middle(array) {
   returnArray.push(array[middleNum]); // grab the middle into new array
   return(returnArray);
 }
-
-
 
 module.exports = middle;

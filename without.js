@@ -1,7 +1,10 @@
 //
-// LHL-lotide project - without.js
+// LHL - Lotide Library - without.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w1/activities/184?journey_step=29&workbook=4
+// v1.0 - 2022-07-29
 //
+
+
 
 /*
 console.log(without([1, 2, 3], [1])); // => [2, 3]
@@ -41,3 +44,4 @@ function without(sourceArr,removeArr) {
 
   return (returnArray);
 }
+module.exports = without;

@@ -1,4 +1,11 @@
-// index.js
+//
+// LHL - Lotide Library - index.js
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w4/activities/371?journey_step=32&workbook=7
+// v1.0 - 2022-07-29
+//
+
+
+// REQUIRE all files in our library for easy inclusion in other projects
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
 const assertObjectsEqual = require('./assertObjectsEqual');
@@ -37,7 +44,7 @@ module.exports = {
   assertArraysEqual
 };
 
-// NOTE - ES6 objects can be written short form like:
+// !NOTE - ES6 objects can be written short form like:
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w4/activities/372?journey_step=32&workbook=7 
 /*
  module.exports { 

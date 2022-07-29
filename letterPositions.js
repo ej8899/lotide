@@ -1,3 +1,9 @@
+//
+// LHL - Lotide Library - letterPositions.js
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/206?journey_step=30&workbook=5
+// v1.0 - 2022-07-29
+//
+
 const letterPositions = function(sentence) {
   const results = {};
 
@@ -22,6 +28,8 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
+
+module.exports = letterPositions;
 
 /*
 console.log(letterPositions("lighthouse in the house"));

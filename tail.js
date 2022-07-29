@@ -1,4 +1,8 @@
-
+//
+// LHL - Lotide Library - tail.js
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w1/activities/154?journey_step=29&workbook=4
+// v1.0 - 2022-07-29
+//
 
 // FYI - brief discord discussion w Anh Le
 
@@ -11,6 +15,5 @@ function tail(inputArray) {
   
   return newArray;
 }
-
 
 module.exports = tail;

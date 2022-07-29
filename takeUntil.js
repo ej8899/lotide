@@ -1,7 +1,7 @@
 //
-// takeUntil.js
+// LHL - Lotide Library - takeUntil.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/229?journey_step=30&workbook=5
-// 2022-07-18
+// v1.0 - 2022-07-18
 //
 
 
@@ -20,6 +20,7 @@ const takeUntil = function(array, callbackFn) {
   return (returnArray);
 }
 
+module.exports = takeUntil;
 
 /*
 

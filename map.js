@@ -1,6 +1,7 @@
 //
-// lotide map.js
+// LHL - Lotide Library - map.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/227?journey_step=30&workbook=5
+// v1.0 - 2022-07-29
 //
 
 
@@ -13,9 +14,10 @@ const map = function(array, callback) {
   for (let item of array) {
     results.push(callback(item)); // execute the callback function for EACH item of the array
   }
-
   return results;
 }
+
+module.exports = map;
 
 /*
 //
