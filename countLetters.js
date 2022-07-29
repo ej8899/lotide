@@ -4,23 +4,23 @@
 // v1.0 - 2022-07-29
 //
 
-function countLetters(inputString) {
-  returnObject={};
+const countLetters = function(inputString) {
+  let returnObject = {}, letter;
 
-  if(!inputString) {
-    return; // nothing to do 
+  if (!inputString) {
+    return; // nothing to do
   }
 
   for (letter of inputString) {
-    if(letter !== ' ') { // skip spaces
-      if(!returnObject[letter]) { // if it's new, start count at 1
+    if (letter !== ' ') { // skip spaces
+      if (!returnObject[letter]) { // if it's new, start count at 1
         returnObject[letter] = 1;
       } else {
-      returnObject[letter]+=1; // inc the count since it exists already
+        returnObject[letter] += 1; // inc the count since it exists already
       }
     }
   }
-  return(returnObject);
-}
+  return (returnObject);
+};
 
 module.exports = countLetters;

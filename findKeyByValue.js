@@ -4,30 +4,34 @@
 //  v1.0 - 2022-07-18
 //
 
+
+const isObject = function(obj) {
+  return obj !== null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
+};
+
 /*
 findKeyByValue() which takes in an object and a value.
-It should scan the object and return the first key which contains the given value. 
+It should scan the object and return the first key which contains the given value.
 If no key with that given value is found, then it should return undefined.
 */
 const findKeyByValue =  function(searchObject,searchKey) {
-  if(!searchObject || !searchKey || !isObject(searchObject)) { return; } // basic error check & get out if it fails
+  if (!searchObject || !searchKey || !isObject(searchObject)) {
+    return;
+  } // basic error check & get out if it fails
 
   // loop thru object
   for (const category in searchObject) {
-    if(searchObject[category] === searchKey) {
+    if (searchObject[category] === searchKey) {
       return (category);
     }
   }
   return;
-}
-function isObject(obj) {
-  return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
-}
+};
 
 module.exports = findKeyByValue;
 
 /*
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire",

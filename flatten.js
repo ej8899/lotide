@@ -7,23 +7,23 @@
 // usage:
 // flatten([1, 2, [3, 4], 5, [6]]) //  EXPECTED OUTPUT: [1, 2, 3, 4, 5, 6]
 
-function flatten(inputArray) {
-  let finalArray=[];
+const flatten = function(inputArray) {
+  let finalArray = [];
 
-  for (let x = 0;x <= inputArray.length-1; x++) {
+  for (let x = 0; x <= inputArray.length - 1; x++) {
     // if item is array so we can do a 1st level recursion otherwise leave type as-is
     
-    if(Array.isArray(inputArray[x])) {
+    if (Array.isArray(inputArray[x])) {
       // recurse one level deep
-      for (let y=0; y<= inputArray[x].length-1; y++) {
+      for (let y = 0; y <= inputArray[x].length - 1; y ++) {
         finalArray.push(inputArray[x][y]);
       }
     } else {
       finalArray.push(inputArray[x]);
     }
   }
-  return(finalArray);
-}
+  return (finalArray);
+};
 module.exports = flatten;
 
 /*

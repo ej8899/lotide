@@ -15,7 +15,7 @@ const map = function(array, callback) {
     results.push(callback(item)); // execute the callback function for EACH item of the array
   }
   return results;
-}
+};
 
 module.exports = map;
 
@@ -41,7 +41,7 @@ console.log(results3);
 
 // TEST multi-line callback
 const fishez = ["groUper", "nuRse ShaRk", "mOray eel", "parRot fish", "stiNgray", "sea TuRTLES"];
-const results4 = map(fishez, word => { 
+const results4 = map(fishez, word => {
   let tempWord = word.toLowerCase();
   let newWord = tempWord[0].toUpperCase() + tempWord.slice(1) + ' are all critters of the Carribean!';
   return newWord; // DONT FORGET to RETURN SOMETHING in this multi line type - it's default in single line!

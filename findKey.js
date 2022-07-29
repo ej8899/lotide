@@ -4,24 +4,27 @@
 //  v1.0 - 2022-07-18
 //
 
+
+const isObject = function(obj) {
+  return obj !== null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
+};
+
 // return FIRST instance of key that is found to match callBackFn or undefined if no matches
 const findKey = function(searchObject,callbackFn) {
-  if(!searchObject || !isObject(searchObject)) { return; } // basic error check & get out if it fails
+  if (!searchObject || !isObject(searchObject)) {
+    return;
+  } // basic error check & get out if it fails
 
   // REMEMBER: callbackFn is our callback function name!
   // example below is object.stars ===2
   for (const itemName in searchObject) {  // start the loop thru searchOjbect
     // if callbackFn returns a true, return itemName
     // console.log(searchObject[itemName].stars);  // DEBUG - do a visual dive here to see what's happening
-    if(callbackFn(searchObject[itemName])) {
+    if (callbackFn(searchObject[itemName])) {
       return itemName;
     }
   }
-}
-
-function isObject(obj) {
-  return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
-}
+};
 
 module.exports = findKey;
 

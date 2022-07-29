@@ -18,7 +18,7 @@ const countOnly = function(allItems, itemsToCount) {
     //   set a property with that string key to:
     //     the value that was already there (or zero if nothing there) with 1 added to it.
 
-    if (itemsToCount[item]) { 
+    if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
       } else {
@@ -27,7 +27,7 @@ const countOnly = function(allItems, itemsToCount) {
     }
   }
   return results;
-}
+};
 
 module.exports = countOnly;
 

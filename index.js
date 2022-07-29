@@ -45,9 +45,9 @@ module.exports = {
 };
 
 // !NOTE - ES6 objects can be written short form like:
-// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w4/activities/372?journey_step=32&workbook=7 
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w4/activities/372?journey_step=32&workbook=7
 /*
- module.exports { 
+ module.exports {
   head // this is if the KEY name is same name as the variable to pass in.
 }
 */

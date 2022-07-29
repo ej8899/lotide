@@ -4,16 +4,16 @@
 // v1.0 - 2022-07-29
 //
 
-function eqArrays(arr1,arr2) {
-  if(arr1.length !== arr2.length) {  // not even same length, lets avoid extra work
-    return false; 
+const eqArrays = function(arr1,arr2) {
+  if (arr1.length !== arr2.length) {  // not even same length, lets avoid extra work
+    return false;
   }
-  for(let x=0; x <arr1.length; x++) {
-    if(arr1[x] !== arr2[x]) {
+  for (let x = 0; x < arr1.length; x ++) {
+    if (arr1[x] !== arr2[x]) {
       return false;
     }
   }
   return true;
-}
+};
 
 module.exports = eqArrays;

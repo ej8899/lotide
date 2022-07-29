@@ -13,14 +13,14 @@ console.log(without([1, 2, 3], [1,2])); // => [3]
 console.log(without([1, -22, 3, 'fish','dolphin','robot'], [1,2,'robot',3])); // => [-22,'fish','dolphin']
 */
 
-function without(sourceArr,removeArr) {
+const without = function(sourceArr,removeArr) {
   // ERROR CHECKING
-  if(!sourceArr || !removeArr) { // nothing to do as we're missing source and/or removal arrray
+  if (!sourceArr || !removeArr) { // nothing to do as we're missing source and/or removal arrray
     return;
   }
 
   // GET TO WORK
-  let returnArray=[];
+  let returnArray = [];
   let x,y,conflict = 0;
 
   for (x = 0; x < sourceArr.length; x++) { // Loop thru SOURCE
@@ -28,20 +28,21 @@ function without(sourceArr,removeArr) {
 
     for (y = 0; y < removeArr.length; y++) { // loop thru CONFLICT
       // console.log('eval:'+sourceArr[x]+'|'+removeArr[y]+'(conflict items)');
-      if(sourceArr[x] === removeArr[y]) {
+      if (sourceArr[x] === removeArr[y]) {
         // console.log('source:'+sourceArr[x]+' FOUND CONFLICT:'+removeArr[y]);
-        conflict=1;
+        conflict = 1;
       }
     }
 
-    if(conflict===0) {
+    if (conflict === 0) {
       // console.log('no conflict, add source to new array:'+sourceArr[x]);
       returnArray.push(sourceArr[x]);
     } else {
-      conflict=0;
+      conflict = 0;
     }
   }
 
   return (returnArray);
-}
+};
+
 module.exports = without;

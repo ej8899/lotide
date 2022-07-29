@@ -7,18 +7,20 @@
 
 // returns array UNTIL supplied callback hits TRUE or undefined
 const takeUntil = function(array, callbackFn) {
-  let returnArray=[];
-  if(!array || !callbackFn) { return; }  // quick error check for empty input/nothing to do
+  let returnArray = [];
+  if (!array || !callbackFn) {
+    return;
+  }  // quick error check for empty input/nothing to do
 
-  for (let x=0; x < array.length; x++) {
-    if(callbackFn(array[x])) {
+  for (let x = 0; x < array.length; x ++) {
+    if (callbackFn(array[x])) {
       return (returnArray);
     } else {
       returnArray.push(array[x]);
     }
   }
   return (returnArray);
-}
+};
 
 module.exports = takeUntil;
 

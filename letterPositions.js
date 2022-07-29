@@ -6,20 +6,20 @@
 
 const letterPositions = function(sentence) {
   const results = {};
+  let letter;
 
   // quick error check (empty input)
-  if(!sentence) {
-    return (results); // nothing to do 
+  if (!sentence) {
+    return (results); // nothing to do
   }
   
 
   // loop thru each letter in the input
-  for(let x=0; x<=sentence.length-1; x++)
-  {
+  for (let x = 0; x <= sentence.length - 1; x ++) {
     letter = sentence.charAt(x); // grab the 'letter' (x will be our index point)
 
-    if(letter !== ' ') { // skip spaces
-      if(!results[letter]) { // if it's new, start an array with the first index of letter found
+    if (letter !== ' ') { // skip spaces
+      if (!results[letter]) { // if it's new, start an array with the first index of letter found
         results[letter] = [x];
       } else { // add to the index array of this letter
         results[letter].push(x);
@@ -36,8 +36,8 @@ console.log(letterPositions("lighthouse in the house"));
 console.log(letterPositions("hello"));
 */
 /* example output with letterPositions ("lighthouse in the house");
-// SKIP spaces, but they 
-{ 
+// SKIP spaces, but they
+{
   l: [0],
   i: [1, 11],
   g: [2],
