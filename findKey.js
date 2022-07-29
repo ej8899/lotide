@@ -1,7 +1,7 @@
 //
-//  findKey.js
+//  LHL - Lotide Library - findKey.js
 //  https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/230?journey_step=30&workbook=5
-//  2022-07-18
+//  v1.0 - 2022-07-18
 //
 
 // return FIRST instance of key that is found to match callBackFn or undefined if no matches
@@ -22,6 +22,8 @@ const findKey = function(searchObject,callbackFn) {
 function isObject(obj) {
   return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
 }
+
+module.exports = eqObjects;
 
 /*
 console.log(findKey({
