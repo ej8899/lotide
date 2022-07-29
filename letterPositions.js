@@ -23,10 +23,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-
+/*
 console.log(letterPositions("lighthouse in the house"));
 console.log(letterPositions("hello"));
-
+*/
 /* example output with letterPositions ("lighthouse in the house");
 // SKIP spaces, but they 
 { 
