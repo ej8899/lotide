@@ -1,6 +1,7 @@
 //
-//
+// LHL - Lotide Library - countLetters.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/205?journey_step=30&workbook=5
+// v1.0 - 2022-07-29
 //
 
 function countLetters(inputString) {
@@ -22,6 +23,3 @@ function countLetters(inputString) {
 
   return(returnObject);
 }
-
-
-
