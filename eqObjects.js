@@ -1,21 +1,10 @@
 //
-// LHL - eqObjects
+// LHL - Lotide Library - eqObjects.js
 // https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/208?journey_step=30&workbook=5
+/// v1.0 - 2022-07-29
 //
 
-
-function eqArrays(arr1,arr2) {
-  if(arr1.length !== arr2.length) {  // not even same length, lets avoid extra work
-    return false; 
-  }
-  for(let x=0; x <arr1.length; x++) {
-    if(arr1[x] !== arr2[x]) {
-      return false;
-    }
-  }
-  return true;
-}
-
+const eqArrays = require('./eqArrays');
 
 
 // Returns true if both objects have identical keys with identical values.
@@ -27,7 +16,6 @@ const eqObjects = function(object1, object2) {
   if(Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
-
 
   // tests stage 2:
   // loop thru object1 - compare key & value to object2 key & value
@@ -48,6 +36,8 @@ const eqObjects = function(object1, object2) {
   }
   return true; // passed all the tests
 };
+
+module.exports = eqObjects;
 
 /*
 const ab = { a: "1", b: "2" };
