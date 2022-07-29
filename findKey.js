@@ -23,7 +23,7 @@ function isObject(obj) {
   return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
 }
 
-module.exports = eqObjects;
+module.exports = findKey;
 
 /*
 console.log(findKey({

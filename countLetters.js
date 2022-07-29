@@ -20,6 +20,7 @@ function countLetters(inputString) {
       }
     }
   }
-
   return(returnObject);
 }
+
+module.exports = countLetters;
