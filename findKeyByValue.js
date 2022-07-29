@@ -17,7 +17,6 @@ const findKeyByValue =  function(searchObject,searchKey) {
     if(searchObject[category] === searchKey) {
       return (category);
     }
-
   }
   return;
 }
