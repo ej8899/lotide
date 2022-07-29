@@ -25,7 +25,6 @@ const eqObjects = function(object1, object2) {
 
   // quick check for same # of object keys in each
   if(Object.keys(object1).length !== Object.keys(object2).length) {
-    console.log("WRONG LENGTHS of keys");
     return false;
   }
 
