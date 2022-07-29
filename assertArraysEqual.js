@@ -1,4 +1,8 @@
-
+//
+// LHL - Lotide Library - assertArraysEqual
+// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w1/activities/183?journey_step=29&workbook=4
+// v1.0 - 2022-07-29
+//
 
 const eqArrays = require('./eqArrays');
 
@@ -9,7 +13,5 @@ function assertArraysEqual(arr1,arr2) {
     console.log("❌ Assertion Failed: " + arr1 + " !== " + arr2);
   }
 }
-
-
 
 module.exports = assertArraysEqual;
