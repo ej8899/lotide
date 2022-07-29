@@ -1,8 +1,8 @@
 //
-//  findKeyByValue.js
+//  LHL - Lotide Library - findKeyByValue.js
 //  https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/207?journey_step=30&workbook=5
-//  2022-07-18
-
+//  v1.0 - 2022-07-18
+//
 
 /*
 findKeyByValue() which takes in an object and a value.
@@ -22,9 +22,10 @@ const findKeyByValue =  function(searchObject,searchKey) {
   return;
 }
 function isObject(obj) {
-    return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
+  return obj != null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
 }
 
+module.exports = eqObjects;
 
 /*
 const bestTVShowsByGenre = { 
