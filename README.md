@@ -1,7 +1,10 @@
-# LHL - Lotide Project
+# LHL - Lotide Javascript Function Library
 **Version 1.0**
 
 The LHL Lotide project is inspired by the Lodash [Lodash](https://lodash.com/) project, which is a utility library for JavaScript. While Lodash itself is quite powerful, our version of it is simpler in order to focus on learning the fundamentals of programming and data management using JavaScript.
+
+![Lotide Javascript Library](./image-lotideTitle2.jpg)
+
 
 ## Lotide Included Fuctions:
 - [x] countLetters.js
