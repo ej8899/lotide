@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": " @ej8899/lotide",
   "version": "1.0.0",
-  "description": "**Version 1.0**",
+  "description": "Lotide - a LHL educational and minimal take on the JS Lodash library.",
   "main": "index.js",
   "directories": {
     "test": "./node_modules/mocha/bin/mocha"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ej8899/lotide.git"
   },
-  "author": "",
+  "author": "erniejohnson.ca",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ej8899/lotide/issues"
