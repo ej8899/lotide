@@ -36,7 +36,9 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 ### Assertion Functions:
 - [x] `assertEqual.js` - tests the equality of two given values
 - [x] `assertArraysEqual.js` - tests the equality of two arrays
-- [x] `assertObjectsEqual.js` - tests the equality of two objects
+- [x] `assertObjectsEqual.js` - tests the equality of two objects  
+
+_Note these are depreciated due to the incorporation of Mocha-Chai testing._
 
 ### Other Included Files:
 - [x] `index.js` - all modules for easy inclusion in your projects
