@@ -2,6 +2,9 @@
 // Generate ASCII art title page for LHL Lotide project
 // 2022-07-29
 //
+// ! There is NO usable Lotide functions in this file.
+// ! It is included only to generate ASCII art for project title page
+//
 
 
 const conColorCyan = "\x1b[36m", conColorRed = '\x1b[91m', conColorGreen = '\x1b[92m', 
