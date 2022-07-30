@@ -4,6 +4,9 @@
 // v1.0 - 2022-07-29
 //
 
+
+// DEPRECIATED FUNCTION with mocha-chai testing
+
 const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arr1,arr2) {

@@ -4,6 +4,7 @@
 // v1.0 - 2022-07-29
 //
 
+
 const letterPositions = function(sentence) {
   const results = {};
   let letter;

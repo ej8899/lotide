@@ -4,6 +4,8 @@
 // 2022-07-13
 //
 
+// DEPRECIATED FUNCTION with mocha-chai testing
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`); // NOTE use of template literal here -- use back ticks to 'engage'

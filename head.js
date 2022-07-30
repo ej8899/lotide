@@ -4,6 +4,16 @@
 // v1.0 - 2022-07-29
 //
 
+/*
+FUNCTION PURPOSE:
+Return an array of the "head" item of the supplied array.
+
+FUNCTION USAGE:
+finalArray = head(sourceArray);
+
+EXAMPLES:
+console.log(head([1,2,3,4,5])); // shows [1]
+*/
 
 const head = function(inputArray) {
   // if single item, it's just a string - let's convert to a single item array instead, otherwise system fails!
