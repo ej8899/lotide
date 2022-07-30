@@ -30,4 +30,7 @@ describe("#eqArrays", () => {
     assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]),true); 
   });
 
+  it("returns true for [1, 2, [3,4]], [1, 2, [3,4]])'", () => {
+    assert.deepEqual(eqArrays([1, 2, [3,4]], [1, 2, [3,4]]),true); 
+  });
 });

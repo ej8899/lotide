@@ -23,7 +23,10 @@ const eqArrays = function(arr1,arr2) {
     return false;
   }
   for (let x = 0; x < arr1.length; x ++) {
-    if (arr1[x] !== arr2[x]) {
+    // recurse thru nested arrays
+    if(arr1[x] instanceof Array){
+      eqArrays(arr1[x],arr2[x]);
+    } else if (arr1[x] !== arr2[x]) {
       return false;
     }
   }
