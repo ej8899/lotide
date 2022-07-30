@@ -14,34 +14,34 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 ## Lotide Included Fuctions:
 
 ### String Related:
-- [x] countLetters.js
-- [x] letterPositions.js
+- [x] `countLetters.js` - returns the number of letter of string
+- [x] `letterPositions.js` - takes in a string and returns all indices of letter positions in the string
 
 ### Array Related:
-- [x] eqArrays.js
-- [x] countOnly.js
-- [x] head.js
-- [x] flatten.js
-- [x] map.js
-- [x] middle.js
-- [x] tail.js
-- [x] takeUntil.js
-- [x] without.js
+- [x] `eqArrays.js` - deep comparison of if two arrays are equal
+- [x] `countOnly.js` - returns object with the number of occurences of items marked as true in the array
+- [x] `head.js` - returns the first element of array
+- [x] `flatten.js` - takes in nested array as input and returns flatten array as output.
+- [x] `map.js` - takes in an array and a callback and returns a new array based on the results of the callback on each item in the array
+- [x] `middle.js` - returns the middle element of array
+- [x] `tail.js` - returns the array elements without first element
+- [x] `takeUntil.js` - takes in an array and callback and returns a slice of the array based on the criteria specified in the callback
+- [x] `without.js` - return a subset of a given array, removing unwanted elements
 
 ### Object Related:
-- [x] eqObjects.js
-- [x] findKey.js
-- [x] findKeyByValue.js
+- [x] `eqObjects.js` - deep comparison of if two object are equal
+- [x] `findKey.js` - takes an object with callback and returns the first key that meets the criteria specified in callback
+- [x] `findKeyByValue.js` - takes in an object and a value. It scans object and returns the first key which contains the given value
 
 ## Assertion Functions:
-- [x] assertArraysEqual.js
-- [x] assertEqual.js
-- [x] assertObjectsEqual.js
+- [x] `assertArraysEqual.js` - tests the equality of two arrays
+- [x] `assertEqual.js` - tests the equality of two given values
+- [x] `assertObjectsEqual.js` - tests the equality of two objects
 
 ## Other Included Files:
-- [x] index.js - all modules for easy inclusion in your projects
-- [x] zTitle.js - simple ASCII art title page (no functionality)
-- [ ] demo.js
+- [x] `index.js` - all modules for easy inclusion in your projects
+- [x] `zTitle.js` - simple ASCII art title page (no functionality)
+- [ ] `demo.js` - demonstration on a couple of functions for example purpose
 
 ## Getting Started:
 **Install it from your project directory:**
