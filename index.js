@@ -5,7 +5,7 @@
 //
 
 //
-// REQUIRE all files in our library for easy inclusion in other projects
+// REQUIRE all files in our library for easy inclusion in other projects.
 //
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
