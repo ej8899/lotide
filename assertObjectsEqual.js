@@ -4,6 +4,7 @@
 // v1.0 - 2022-07-29
 //
 
+// DEPRECIATED FUNCTION with mocha-chai testing
 
 const eqObjects = require('./eqObjects');
 

@@ -4,6 +4,18 @@
 // v1.0 - 2022-07-29
 //
 
+/*
+FUNCTION PURPOSE:
+Return an array of the "middle" items of the supplied array.
+Middle will be a single item if array length is odd, or middle TWO items if array is even length.
+
+FUNCTION USAGE:
+finalArray = middle(sourceArray);
+
+EXAMPLES:
+console.log(middle([1,2,3,4,5])); // shows [3]
+console.log(middle([1,2,3,4,5,6])); // shows [3,4]
+*/
 const middle = function(array) {
   if (Array.isArray(array) === false) {
     return (['']);

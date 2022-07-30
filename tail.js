@@ -4,6 +4,18 @@
 // v1.0 - 2022-07-29
 //
 
+
+/*
+FUNCTION PURPOSE:
+Return an array of the "tail" items of the supplied array. Tail being all array items except the first one.
+
+FUNCTION USAGE:
+finalArray = tail(sourceArray);
+
+EXAMPLES:
+console.log(tail([1,2,3,4,5])); // shows [2,3,4,5]
+*/
+
 // return an array - leaving original intact - that is everything after first element
 const tail = function(inputArray) {
   if (!Array.isArray(inputArray)) {

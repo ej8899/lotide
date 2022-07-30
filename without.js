@@ -7,6 +7,16 @@
 
 
 /*
+FUNCTION PURPOSE:
+Remove items from our supplied source array that are included within a supplied removal array.
+Return the revised array and leave original intact.
+
+FUNCTION USAGE:
+finalArray = without(sourceArray, removalArray);
+
+finalArray is empty if any input errors.
+
+EXAMPLES:
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 console.log(without([1, 2, 3], [1,2])); // => [3]
@@ -41,7 +51,6 @@ const without = function(sourceArr,removeArr) {
       conflict = 0;
     }
   }
-
   return (returnArray);
 };
 

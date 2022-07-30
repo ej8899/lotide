@@ -4,8 +4,18 @@
 //  v1.0 - 2022-07-18
 //
 
-// usage:
-// flatten([1, 2, [3, 4], 5, [6]]) //  EXPECTED OUTPUT: [1, 2, 3, 4, 5, 6]
+
+/*
+FUNCTION PURPOSE:
+Return an array of a "flattened" source array.
+Flattening means to parse nested arrays and insert these items into proper array position. 
+
+FUNCTION USAGE:
+finalArray = flatten(sourceArray);
+
+EXAMPLES:
+outputArray = flatten([1, 2, [3, 4], 5, [6]]); //  EXPECTED OUTPUT: [1, 2, 3, 4, 5, 6]
+*/
 
 const flatten = function(inputArray) {
   let finalArray = [];
