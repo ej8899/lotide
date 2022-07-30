@@ -12,7 +12,6 @@ const letterPositions = function(sentence) {
   if (!sentence) {
     return (results); // nothing to do
   }
-  
 
   // loop thru each letter in the input
   for (let x = 0; x <= sentence.length - 1; x ++) {
