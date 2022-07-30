@@ -12,7 +12,6 @@ const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
   for (const item of allItems) {
-    console.log(item);
 
     // increment the counter for each item:
     //   set a property with that string key to:
