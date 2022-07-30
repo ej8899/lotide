@@ -33,12 +33,12 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 - [x] `findKey.js` - takes an object with callback and returns the first key that meets the criteria specified in callback
 - [x] `findKeyByValue.js` - takes in an object and a value. It scans object and returns the first key which contains the given value
 
-## Assertion Functions:
+### Assertion Functions:
 - [x] `assertArraysEqual.js` - tests the equality of two arrays
 - [x] `assertEqual.js` - tests the equality of two given values
 - [x] `assertObjectsEqual.js` - tests the equality of two objects
 
-## Other Included Files:
+### Other Included Files:
 - [x] `index.js` - all modules for easy inclusion in your projects
 - [x] `zTitle.js` - simple ASCII art title page (no functionality)
 
