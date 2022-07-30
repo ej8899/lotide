@@ -4,11 +4,6 @@
 // v1.0 - 2022-07-29
 //
 
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
-// The function should report back how many instances of each string were found in the allItems array of strings.
-// return is OBJECT
-
 /*
 FUNCTION PURPOSE:
 Iterate through input array and return object showing count of items in an object of items to count from array.

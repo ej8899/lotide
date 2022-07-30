@@ -4,8 +4,9 @@
 // v1.0 - 2022-07-29
 //
 
-
+//
 // REQUIRE all files in our library for easy inclusion in other projects
+//
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
 const assertObjectsEqual = require('./assertObjectsEqual');
