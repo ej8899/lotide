@@ -2,3 +2,5 @@ DS_Store/
 zTitle.js
 image-lotideTitle.jpg
 node_modules/
+.eslintrc.json
+.eslintignore

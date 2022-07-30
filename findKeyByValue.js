@@ -4,16 +4,30 @@
 //  v1.0 - 2022-07-18
 //
 
+/*
+FUNCTION PURPOSE:
+Takein an object and a search string value.
+It should scan the object and return the first key which contains the given value.
+If no key with that given value is found, then it should return undefined.
+
+FUNCTION USAGE:
+firstKeyFound = findKeyByValue(sourceObject, searchString);
+
+EXAMPLES:
+const bestTVShowsByGenre = {
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire",
+  action: "The A-Team",
+};
+whatKey = findKeyByValue(bestTVShowsByGenre,"The A-Team");
+results in "action"
+*/
 
 const isObject = function(obj) {
   return obj !== null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
 };
 
-/*
-findKeyByValue() which takes in an object and a value.
-It should scan the object and return the first key which contains the given value.
-If no key with that given value is found, then it should return undefined.
-*/
 const findKeyByValue =  function(searchObject,searchKey) {
   if (!searchObject || !searchKey || !isObject(searchObject)) {
     return;
@@ -31,13 +45,7 @@ const findKeyByValue =  function(searchObject,searchKey) {
 module.exports = findKeyByValue;
 
 /*
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire",
-  action: "The A-Team",
-};
-
+ASSORTED TEST OPTIONS:
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 assertEqual(findKeyByValue("What on Earth"), undefined);
@@ -45,5 +53,5 @@ assertEqual(findKeyByValue(), undefined);
 assertEqual(findKeyByValue("not an object","The A-Team"), undefined);
 assertEqual(findKeyByValue(["not an object","item2"],"The A-Team"), undefined);
 assertEqual(findKeyByValue(5,"The A-Team"), undefined);
-assertEqual(findKeyByValue(bestTVShowsByGenre,"The A-Team"), "action");
+
 */

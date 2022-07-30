@@ -4,6 +4,23 @@
 //  v1.0 - 2022-07-18
 //
 
+/*
+FUNCTION PURPOSE:
+scan the object and return the first key for which the callback returns a truthy value.
+If no key is found, then it should return undefined.
+
+FUNCTION USAGE:
+firstKey = findKey(sourceObject, callbackFunction);
+
+EXAMPLES:
+console.log(findKey({
+  "nurse shark": { areas: [1,3], sightings: 1 },
+  "moray eel":   { areas: [1,7], sightings: 4 },
+  "lobster":      { areas: [9,1], sightings: 4 },
+  "wrecks":   { areas: [2,3], sightings: 2 },
+  "parrot fish":       { areas: [3,7], sightings: 2 }
+}, x => x.sightings === 4)); // => "moray eel"
+*/
 
 const isObject = function(obj) {
   return obj !== null && obj.constructor.name === "Object";  // Object / String / Array / Number return types
@@ -27,23 +44,3 @@ const findKey = function(searchObject,callbackFn) {
 };
 
 module.exports = findKey;
-
-/*
-console.log(findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2)); // => "noma"
-
-
-console.log(findKey({
-  "nurse shark": { areas: [1,3], sightings: 1 },
-  "moray eel":   { areas: [1,7], sightings: 4 },
-  "lobster":      { areas: [9,1], sightings: 4 },
-  "wrecks":   { areas: [2,3], sightings: 2 },
-  "parrot fish":       { areas: [3,7], sightings: 2 }
-}, x => x.sightings === 4)); // => "moray eel"
-*/

@@ -6,6 +6,20 @@
 
 const eqArrays = require('./eqArrays');
 
+/*
+FUNCTION PURPOSE:
+Compare two objects to see if they are equal - includes objects with arrays
+
+FUNCTION USAGE:
+result = eqObjects(objectOne, objectTwo);
+
+EXAMPLES:
+const ab = { a: "1", b: "2" };
+const ba = { b: "2", a: "1" };
+console.log(eqObjects(ab, ba)); // => true
+const abc = { a: "1", b: "2", c: "3" };
+console.log(eqObjects(ab, abc)); // => false
+*/
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -40,10 +54,11 @@ const eqObjects = function(object1, object2) {
 module.exports = eqObjects;
 
 /*
+// MORE EXAMPLES:
+
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 console.log(eqObjects(ab, ba)); // => true
-
 
 // quick test for size of object (# of keys)
 const abc = { a: "1", b: "2", c: "3" };

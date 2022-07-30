@@ -5,6 +5,18 @@
 //
 
 
+/*
+FUNCTION PURPOSE:
+The map function will return a new array based on the results of the supplied callback function.
+
+FUNCTION USAGE:
+newArray = map(sourceArray, callbackFunction);
+
+EXAMPLES:
+const nums = [10,12,14,16,18];
+const results2 = map(nums, num => num * 2);
+*/
+
 // REMINDER:
 // this is a build of our own MAP function - does not use built in map
 //
@@ -21,7 +33,7 @@ module.exports = map;
 
 /*
 //
-// TEST CASES:
+// TEST CASES * MORE EXAMPLES
 //
 
 // test simple string proceedure
@@ -47,11 +59,4 @@ const results4 = map(fishez, word => {
   return newWord; // DONT FORGET to RETURN SOMETHING in this multi line type - it's default in single line!
 });
 console.log(results4);
-
-/*
-// arrow function explained
-equivalent:
-function (word) {
-  return word[0];
-}
 */
