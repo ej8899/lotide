@@ -44,15 +44,15 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 - [ ] demo.js
 
 ## Getting Started:
-**Install it:**
+**Install it from your project directory:**
 
 `npm install @username/lotide`
 
-**Require it:**
+**Require it in your .js file:**
 
 `const _ = require('@username/lotide');`
 
-**Call it:**
+**Call it within your .js file:**
 
 `const results = _.tail([1, 2, 3]) // => [2, 3]`
 ## Usage:
