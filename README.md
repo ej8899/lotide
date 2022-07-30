@@ -29,3 +29,7 @@ The LHL Lotide project is inspired by the Lodash [Lodash](https://lodash.com/) p
 - [x] index.js
 - [ ] demo.js
 
+## Getting Started:
+
+## Usage:
+
