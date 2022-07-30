@@ -1,16 +1,21 @@
 //
 // Mocha-Chai testing
 //
-const eqArrays = require('../eqObjects');
+const eqObjects = require('../eqObjects.js');
 const assert = require('chai').assert;
 
-describe("#eqObjects, () => {
-  it("returns false for [1, 2, 3], [3, 2, 1])'", () => {
-    assert.deepEqual(eqObjects([1, 2, 3], [3, 2, 1]),false); 
+// TEST OBJECTS
+const ab = { a: "1", b: "2" };
+const ba = { b: "2", a: "1" };
+const abc = { a: "1", b: "2", c: "3" };
+
+describe("#eqObjects", () => {
+  it("returns true for ab to ba", () => {
+    assert.deepEqual(eqObjects(ab,ba),true); 
   });
 
-  it("returns true for [1, 2, 3], [1, 2, 3])'", () => {
-    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]),true); 
+  it("returns false for ab to abc", () => {
+    assert.deepEqual(eqObjects(ab,abc),false); 
   });
 
 });
