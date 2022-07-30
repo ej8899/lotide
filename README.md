@@ -41,7 +41,7 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 ## Other Included Files:
 - [x] `index.js` - all modules for easy inclusion in your projects
 - [x] `zTitle.js` - simple ASCII art title page (no functionality)
-- [ ] `demo.js` - demonstration on a couple of functions for example purpose
+
 
 ## Getting Started:
 **Install it from your project directory:**
@@ -57,3 +57,6 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 `const results = _.tail([1, 2, 3]) // => [2, 3]`
 ## Usage:
 Each Lotide function has it's own input parameters, and output (return) conditions.   It is encouraged that you review each Lotide library item to learn more about each function along with the required inputs and the expected outputs. 
+
+## Future Ideas:
+- [ ] `demo.js` - create demo of functions for example purpose
