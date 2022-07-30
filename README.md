@@ -46,11 +46,11 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com/) project,
 ## Getting Started:
 **Install it from your project directory:**
 
-`npm install @username/lotide`
+`npm install @ej8899/lotide`
 
 **Require it in your .js file:**
 
-`const _ = require('@username/lotide');`
+`const _ = require('@ej8899/lotide');`
 
 **Call it within your .js file:**
 
