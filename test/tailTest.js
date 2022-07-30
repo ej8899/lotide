@@ -1,6 +1,12 @@
-const assertEqual = require('../assertEqual');
+
 const tail = require('../tail');
 
+
+//
+// Depreciated Tests using Lotide assertion
+//
+/*
+const assertEqual = require('../assertEqual');
 
 // MISC CHECKS
 const result = tail(["Hello", "Lighthouse", "Labs"]);
@@ -21,3 +27,16 @@ assertEqual(tail([1,2,'3','four'],[2,'3','four']));
 console.log(tail(1,2,'3','four'));
 assertEqual(tail(['1','2','3']),['2','3']);
 assertEqual(tail([1,2,3]),[2,3]);
+*/
+
+//
+// Tests using MOCHA & CHAI
+//
+const assert = require('chai').assert;
+
+describe("#tail", () => {
+  it("returns [2,3] for [1, 2, 3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
+
+});
